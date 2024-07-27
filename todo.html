@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas y Ofertas "LITCERA"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Bienvenido a Ventas y Ofertas "LITCERA"</h1>
+    </div>
+
+    <div class="tabs">
+        <div class="tab active" onclick="openTab(event, 'home')">Inicio</div>
+        <div class="tab" onclick="openTab(event, 'products')">Productos</div>
+        <div class="tab" onclick="openTab(event, 'payments')">Pagos</div>
+        <div class="tab" onclick="openTab(event, 'about')">Acerca de</div>
+        <div class="tab" onclick="openTab(event, 'contact')">Contacto</div>
+    </div>
+
+    <div id="home" class="tab-content active">
+        <h2>Inicio</h2>
+        <p>Bienvenido a nuestra página de inicio. En donde encontraras una variedad de productos relacionados al cuidado personal, y una cantidad gigante de ofertas.</p>
+    </div>
+
+    <div id="products" class="tab-content">
+        <div class="header">
+            <h1>Productos en Venta</h1>
+        </div>
+        <div class="container">
+            <div class="product">
+                <img src="https://biodegradables.com.es/wp-content/uploads/2020/01/Cepillo-de-dientes.jpg" alt="Cepillo de dientes">
+                <div class="product-details">
+                    <h3>Cepillo de dientes</h3>
+                    <p>Cepillo de dientes en una variedad de colores, hecho con material de bambú y unas cerdas muy suaves que serán cuidadosas con tus encías.</p>
+                    <p class="price">$24.99</p>
+                    <button>Comprar Ahora</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="https://farmaciajimenez.com/storage/library/content/fluidoinv_0584ce565c824b7b7f50282d9a19945b.jpg" alt="Bloqueador solar">
+                <div class="product-details">
+                    <h3>Bloqueador solar</h3>
+                    <p>Bloqueador solar "la roche posay", un bloqueador solar dermatológico que cuidará tu piel de los rayos solares, cuenta con una fórmula que hidratará tu piel y no será una pesadez aplicarlo.</p>
+                    <p class="price">$290.50</p>
+                    <button>Comprar Ahora</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750105450487L.jpg" alt="Hidratante de labios">
+                <div class="product-details">
+                    <h3>Hidratante de labios</h3>
+                    <p>Hidratante de labios "labello" sin color, para cualquier resequedad le devuelve la vida a tus labios.</p>
+                    <p class="price">$66.00</p>
+                    <button>Comprar Ahora</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="payments" class="tab-content">
+        <div class="header">
+            <h1>Modalidades de Pago</h1>
+        </div>
+        <div class="container">
+            <div class="payment-method">
+                <h3>Transferencia Bancaria</h3>
+                <div class="icon">
+                    <img src="https://www.cuentasclaras.es/wp-content/uploads/2017/11/transferencias-instantaneas-100.jpg" alt="Transferencia">
+                </div>
+                <p>Realiza tu pago mediante transferencia bancaria a nuestra cuenta. Los datos para la transferencia se te proporcionarán al finalizar tu compra.</p>
+            </div>
+    
+            <div class="payment-method">
+                <h3>Pago con Tarjeta</h3>
+                <div class="icon">
+                    <img src="https://nacho.com.ar/wp-content/uploads/pago-con-tarjetas.jpg" alt="Tarjeta">
+                </div>
+                <p>Puedes pagar de manera segura con tu tarjeta de crédito o débito. Aceptamos Visa, MasterCard y American Express.</p>
+            </div>
+    
+            <div class="payment-method">
+                <h3>Depósito en OXXO</h3>
+                <div class="icon">
+                    <img src="https://fibradenopal.com/us/wp-content/uploads/2021/06/Oxxo-bueno-1.png" alt="OXXO">
+                </div>
+                <p>Realiza tu pago en cualquier tienda OXXO del país. Recibirás un código de referencia para realizar el depósito al finalizar tu compra.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="tab-content">
+        <h2>Acerca de</h2>
+        <p>Aquí encontrarás información sobre nosotros. Somos una compañía con el propósito de ofrecerte productos de buena calidad y buen precio. Trabajamos productos a mayoreo y menudeo y si presentas documentación oficial de ser egresado de la preparatoria COLESH, te ofrecemos el 40% de descuento en toda nuestra sección de ropa y calzado.</p>
+    </div>
+
+    <div id="contact" class="tab-content">
+        <h2>Contacto</h2>
+        <p>Contáctanos a través de nuestro número telefónico: 1234567890, o a través de nuestro correo electrónico: ventasyofertas@litcera.com. También contamos con redes sociales: Instagram: ventas y ofertas litcera, Facebook: ventas liceras, TikTok: ventas litcera.</p>
+    </div>
+
+    <script>
+        function openTab(event, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+</html>

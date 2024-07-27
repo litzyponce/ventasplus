@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos en Venta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            max-width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        .product-details {
+            padding: 15px;
+        }
+        .product-details h3 {
+            margin: 0 0 10px;
+        }
+        .product-details p {
+            color: #555;
+            margin: 0 0 15px;
+        }
+        .product-details .price {
+            color: #E91E63;
+            font-size: 1.2em;
+            margin: 0 0 10px;
+        }
+        .product-details button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .product-details button:hover {
+            background-color: #45A049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Productos en Venta</h1>
+    </div>
+
+    <div class="container">
+        <div class="product">
+            <img src="https://biodegradables.com.es/wp-content/uploads/2020/01/Cepillo-de-dientes.jpg" alt="Cepillo de dientes">
+            <div class="product-details">
+                <h3>Cepillo de dientes</h3>
+                <p>Cepillo de dientes en una variedad de colores, hecho con material de bambú y unas cerdas muy suaves que serán cuidadosas con tus encías.</p>
+                <p class="price">$24.99</p>
+                <button>Comprar Ahora</button>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="https://farmaciajimenez.com/storage/library/content/fluidoinv_0584ce565c824b7b7f50282d9a19945b.jpg" alt="Bloqueador solar">
+            <div class="product-details">
+                <h3>Bloqueador solar</h3>
+                <p>Bloqueador solar "la roche posay", un bloqueador solar dermatológico que cuidará tu piel de los rayos solares, cuenta con una fórmula que hidratará tu piel y no será una pesadez aplicarlo.</p>
+                <p class="price">$290.50</p>
+                <button>Comprar Ahora</button>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750105450487L.jpg" alt="Hidratante de labios">
+            <div class="product-details">
+                <h3>Hidratante de labios</h3>
+                <p>Hidratante de labios "labello" sin color, para cualquier resequedad le devuelve la vida a tus labios.</p>
+                <p class="price">$66.00</p>
+                <button>Comprar Ahora</button>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

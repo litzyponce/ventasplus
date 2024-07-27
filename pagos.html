@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modalidades de Pago</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .payment-method {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .payment-method:hover {
+            transform: scale(1.05);
+        }
+        .payment-method h3 {
+            background-color: #2196F3;
+            color: white;
+            margin: 0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .payment-method p {
+            padding: 15px;
+            margin: 0;
+            color: #555;
+        }
+        .payment-method .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .payment-method .icon img {
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Modalidades de Pago</h1>
+    </div>
+
+    <div class="container">
+        <div class="payment-method">
+            <h3>Transferencia Bancaria</h3>
+            <div class="icon">
+                <img src="https://www.cuentasclaras.es/wp-content/uploads/2017/11/transferencias-instantaneas-100.jpg" alt="Transferencia">
+            </div>
+            <p>Realiza tu pago mediante transferencia bancaria a nuestra cuenta. Los datos para la transferencia se te proporcionarán al finalizar tu compra.</p>
+        </div>
+
+        <div class="payment-method">
+            <h3>Pago con Tarjeta</h3>
+            <div class="icon">
+                <img src="https://nacho.com.ar/wp-content/uploads/pago-con-tarjetas.jpg" alt="Tarjeta">
+            </div>
+            <p>Puedes pagar de manera segura con tu tarjeta de crédito o débito. Aceptamos Visa, MasterCard y American Express.</p>
+        </div>
+
+        <div class="payment-method">
+            <h3>Depósito en OXXO</h3>
+            <div class="icon">
+                <img src="https://fibradenopal.com/us/wp-content/uploads/2021/06/Oxxo-bueno-1.png" alt="OXXO">
+            </div>
+            <p>Realiza tu pago en cualquier tienda OXXO del país. Recibirás un código de referencia para realizar el depósito al finalizar tu compra.</p>
+        </div>
+    </div>
+
+</body>
+</html>

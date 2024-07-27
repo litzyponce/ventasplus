@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Bienvenida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-bottom: 1px solid #ccc;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            background-color: #ddd;
+        }
+        .tab.active {
+            background-color: white;
+            font-weight: bold;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenido a Ventas Y Ofertas "LITCERA"</h1>
+
+    <div class="tabs">
+        <div class="tab active" onclick="openTab(event, 'home')">Inicio</div>
+        <div class="tab" onclick="openTab(event, 'about')">Acerca de</div>
+        <div class="tab" onclick="openTab(event, 'contact')">Contacto</div>
+    </div>
+
+    <div id="home" class="tab-content active">
+        <h2>Inicio</h2>
+        <p>Bienvenido a nuestra página de inicio. En donde encontraras una variedad de productos relacionados al cuidado personal, y una cantidad gigante de ofertas</p>
+    </div>
+
+    <div id="about" class="tab-content">
+        <h2>Acerca de</h2>
+        <p>Aquí encontrarás información sobre nosotros. Somos una compañia con el proposito de ofrecerte productos de buena calidad y buen precio. trabajamos productos a mayoreo y menudeo y si presentan documentalizacion oficial de ser egresados de la preparatoria COLESH les ofrecemos el 40% de descuento en toda nuestra seccion de ropa y calzado</p>
+    </div>
+
+    <div id="contact" class="tab-content">
+        <h2>Contacto</h2>
+        <p>Contáctanos a través de nuestro numero telefonico: 1234567890. o a traves de nuestro correo electronico: ventasyofertas@litcera.com. Tambien contamos con redes sociales: instagram: ventas y ofertas litcera. facebook: ventas liceras. tiktok: ventas litcera</p>
+    </div>
+
+    <script>
+        function openTab(event, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+</html>
